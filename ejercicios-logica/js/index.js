@@ -17,9 +17,11 @@ promedio = (nota1 + nota2 + nota3)/3;
     */
 
 
-    /* 2-Realizá un programa que permita ingresar un número entero. 
+/* 2-Realizá un programa que permita ingresar un número entero. 
     Debe mostrarse el número ingresado: a. Multiplicado por 5. b. Dividido por 2. */
 
+
+    /*
 let numeroEntero = parseInt(prompt("Ingresa tu numero: "));
 
 console.log(numeroEntero);
@@ -32,7 +34,12 @@ console.log(multiplicadoPorCinco);
 
 
 divididoPorDos = multiplicadoPorCinco/2;
-console.log(divididoPorDos.toFixed(2));
+console.log("El resultado final de lo que pediste es " +divididoPorDos.toFixed(2));
+
+*/
+
+
+
 
 
 
