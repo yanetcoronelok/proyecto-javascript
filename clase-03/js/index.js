@@ -171,6 +171,6 @@ do {
     }
 
 
-} while(true);
+} while(true); // el true hace que se controle el do while por las condiciones declaradas en do. 
 
 
