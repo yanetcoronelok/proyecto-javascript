@@ -89,12 +89,88 @@ for(let i =0; i <= 10; i++){
 
 // Tabla de multiplicar
 
+/*
 let tablaDelCinco = 5;
 
-for(let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++){
 
     let resultado = tablaDelCinco * i;
     
     console.log(tablaDelCinco + " x " + i + " = " + resultado);
 }
+    */
+
+for (let i = 1 ; i <= 5; i++){
+
+// hay una sentencia que se llama continue que se utiliza para saltar una iteracion y continua con la siguiente.
+// hay una sentencia que se llama break qeu si se utiliza, automaticamente se frena el bucle y se sale. 
+
+/*if(i===3){
+    continue;
+}
+console.log(i)
+}
+*/
+
+if(i===3){
+    break;
+}
+console.log(i)
+}
+
+
+
+/**While es una estructura de control que va a repetir un 
+ * conjunto de instrucciones mientras se cumpla una condicion especifica
+ * 
+ * 
+while(condicion){
+    bloque de codigoa  ejecutar
+}
+ */
+
+let contador = 1;
+
+while(contador <= 10){
+
+    console.log("numero: " + contador);
+
+    contador++; 
+}
+
+
+/** DO WHILE
+ * a diferencia del while, lo qeu tiene de caracteristico, es que se ejecuta aunque sea una unica vez.
+ * Se utiliza para ejecutar un bloque de codigo al menos una vez y luego repetirlo mientras se cumpla
+ * una condicion especifica. 
+ *
+ * do{
+ *      bloque de codigo a ejecutar
+ * } while(condicion)
+ * 
+ *  
+ */
+
+let clave;
+
+let intentos = 0;
+const MAX_INTENTOS = 3;
+
+do {
+    clave = prompt('Ingresa la clave');
+    intentos ++;
+    
+    if(clave ==='clave123'){
+        console.log("Contrasenia correcta");
+        break; // si el usuario coloca la clave correcta, se corta el bucle
+    }
+
+    if(intentos >= MAX_INTENTOS){
+        console.log("Se alcanzo la cantidad maxima de intentos");
+        break;
+    }
+
+
+} while(true);
+
 
