@@ -75,6 +75,26 @@ for (inicializacion; condicion; actualizacion){
  * 
  */
 
+/*
 for(let i =0; i <= 10; i++){
     console.log("Se imprimio el mensaje", i);
-}; 
+};
+*/ 
+
+/**La inicializacion se ejecuta UNA VEZ al inicio
+ * la condicion se evalua antes de cada iteracion. Si es verdadero, continua con la ejecucion. 
+ * la actualizacion se ejecuta al final de cada iteracion. Se suma y vuelve a evaluar. 
+ * 
+ */
+
+// Tabla de multiplicar
+
+let tablaDelCinco = 5;
+
+for(let i = 1; i <= 10; i++){
+
+    let resultado = tablaDelCinco * i;
+    
+    console.log(tablaDelCinco + " x " + i + " = " + resultado);
+}
+
