@@ -48,7 +48,7 @@ console.log("El resultado final de lo que pediste es " +divididoPorDos.toFixed(2
  * semanal, sabiendo que trabaja todos los días hábiles y la mitad de las horas del día hábil 
  * los sábados. (Todas las horas valen lo mismo.)  
  * 
- */
+ */ 
 
 /* 
 let precioPorHora
@@ -93,13 +93,13 @@ console.log("Ahora los valores son: " + nuevoNum1 + " y " + nuevoNum2 );
 /* 1-Realizá un programa que permita ingresar un número entero 
  e indique si se trata de un número par o impar.  */
  
- let numeroEntero
+/*  let numeroEntero
 
  numeroEntero = parseInt(prompt("Ingrese un numero entero: ")); 
 
  if (numeroEntero % 2 === 0){
     console.log("El numero ingresado " + numeroEntero + " es un numero par");
- } else (console.log("El numero ingresado " + numeroEntero + " es un numero impar")); 
+ } else (console.log("El numero ingresado " + numeroEntero + " es un numero impar"));  */
 
 
 
@@ -107,10 +107,44 @@ console.log("Ahora los valores son: " + nuevoNum1 + " y " + nuevoNum2 );
 /*  2-Realizá un programa que permita ingresar dos números enteros 
  e indique cuál de ellos es el mayor. [EC]  */
 
- 
+/* let numeroEntero1
+let numeroEntero2
+
+numeroEntero1 = parseInt(prompt("Ingrese un numero: ")); 
+numeroEntero2 = parseInt(prompt("Ingrese otro numero: "))
+
+if (numeroEntero1 > numeroEntero2){ 
+  console.log("El primer valor ingresado " + numeroEntero1 + " es mayor que el segundo valor ingresado " + numeroEntero2);
+} else { 
+  console.log("El segundo valor ingresado " + numeroEntero2 + " es mayor que el primer valor ingresado " + numeroEntero1);
+}
+
+ */
+
  
 /*  
   3.Realizá un programa para ingresar tres números enteros e 
   indique cuál de ellos es el mayor y su valor. [EC]  */
  
- 
+
+  let primerNumeroEntero
+  let segundoNumeroEntero
+  let tercerNumeroEntero
+
+primerNumeroEntero = parseInt(prompt("Ingrese un numero: ")); 
+segundoNumeroEntero = parseInt(prompt("Ingrese otro numero: "));
+tercerNumeroEntero = parseInt(prompt("Ingrese un numero mas: "));
+
+if (primerNumeroEntero > segundoNumeroEntero && primerNumeroEntero > tercerNumeroEntero){
+  console.log("El primer valor ingresado " + primerNumeroEntero + " es el mayor de los numeros ingresados");
+} else if(segundoNumeroEntero > primerNumeroEntero && segundoNumeroEntero > tercerNumeroEntero) { 
+  console.log("El segundo valor ingresado " + segundoNumeroEntero + " es el mayor de los numeros ingresados");
+} else if  (tercerNumeroEntero > primerNumeroEntero && tercerNumeroEntero > segundoNumeroEntero) {
+    console.log("El tercer valor ingresado " + tercerNumeroEntero + " es el mayor de los numeros ingresados");
+}
+
+
+
+
+
+
