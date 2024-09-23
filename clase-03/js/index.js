@@ -151,6 +151,7 @@ while(contador <= 10){
  *  
  */
 
+/*
 let clave;
 
 let intentos = 0;
@@ -173,4 +174,4 @@ do {
 
 } while(true); // el true hace que se controle el do while por las condiciones declaradas en do. 
 
-
+*/
