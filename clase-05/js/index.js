@@ -112,7 +112,7 @@ Dentro de la clase se crea un constructor que nos sirve para inicializar las pro
 
 */
 
-
+/* 
 class Auto {
     constructor(marca, modelo, anio){
         this.marca = marca; 
@@ -128,5 +128,36 @@ class Auto {
 let auto5 = new Auto("Renault", "Fluence", 2009);
 
 console.log(auto5.info());
+ */
 
 
+
+class Persona {
+    constructor(nombre, edad, calle, ciudad, codigoPostal, habilidades){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.direccion = {
+            calle: calle, 
+            ciudad: ciudad,
+            codigoPostal: codigoPostal,
+        };
+        this.habilidades = habilidades;
+    }
+
+    mostrarInfo(){
+        console.log(`nombre $this.nombre`)
+    }
+}
+
+
+
+const YANET = new Persona(
+        "Yanet", 
+        35, 
+        "Avenida siempre viva",
+        "Springfield",
+        1234,
+        "Tocar la guitarra",
+);
+
+console.log(YANET)
