@@ -162,3 +162,46 @@ let alumnos = ['franco', 'stefany', 'natalia', 'jonatan'];
 let aprobadas = alumnos.slice(1,3);
 console.log(aprobadas);
 console.log(alumnos);
+
+let desaprobados = [alumnos[0], alumnos[alumnos.length-1]];
+
+console.log(desaprobados);
+
+//for.. Of: es una estructura de control de flujo. Se utiliza para recorrer y operar en elementos de un iterable. 
+
+const lenguajes = ['ingles', 'espanol', 'italiano', 'frances'];
+
+for (const lenguaje of lenguajes){
+    console.log(lenguaje);
+}
+
+// Carrito de productos que suman el total de los precios de los productos
+const PRODUCTOS = [
+    {
+        producto: "camiseta",
+        precio: 20
+
+    },
+    {
+        producto: "zapatillas",
+        precio: 30
+
+    },
+    {
+        producto: "pantalones",
+        precio: 40
+
+    },
+
+]
+
+let precioTotal = 0;
+
+for (const producto of PRODUCTOS){
+    
+    precioTotal += producto.precio;
+    //con el += se suma y se asigna valor
+
+}
+
+console.log("El precio del carrito es: " + precioTotal)
